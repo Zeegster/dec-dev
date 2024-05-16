@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
+
+
+@layer base {
+  
+
+  body,#root{
+    height: 100%;
+    background-color: white;
+  }
+  html {
+    
+    background-color: white;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .font-dela {
+    font-family: "Dela Gothic One", system-ui, sans-serif;
+    font-weight: 800;
+  }
+  .list-disc-inside{
+    @apply list-disc list-inside mb-2
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #7faedf87;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #43688f;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.block-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 55px 0px 0px;
+  border-color: transparent #f3f5f7 transparent transparent;
+  top: 12px;
+  left: -28px;
+}
